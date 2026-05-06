@@ -39,14 +39,10 @@
     "replace": "cr:replace",
     "sc": "https://schema.org/",
     "separator": "cr:separator",
-    "sha256": "sc:sha256",
     "source": "cr:source",
     "subField": "cr:subField",
     "transform": "cr:transform",
-    "wd": "https://www.wikidata.org/wiki/",
-    "equivalentProperty": "cr:equivalentProperty",
-    "fileProperty": "cr:fileProperty",
-    "samplingRate": "cr:samplingRate"
+    "wd": "https://www.wikidata.org/wiki/"
   },
   "@type": "Dataset",
   "name": "neurips-datasetss",
@@ -75,7 +71,7 @@
       "description": "CSV file containing sentence-level experimental data for experiments 1 and 2.",
       "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/expirement1_and_2_200sentence_data.csv",
       "encodingFormat": "text/csv",
-      "sha256": "ee28e649d00c00b94b2f297ac0fc27e49929bd823106c8aa35ec35b099a6290f"
+      "https://schema.org/sha256": "ee28e649d00c00b94b2f297ac0fc27e49929bd823106c8aa35ec35b099a6290f"
     },
     {
       "@type": "cr:FileObject",
@@ -84,7 +80,7 @@
       "description": "CSV file containing sentence-level experimental data for experiments 1 and 2.",
       "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/expirement1_and_2_40sentence_data.csv",
       "encodingFormat": "text/csv",
-      "sha256": "fd57520d22160ee792c7e94f92958dfa51d7fb8cc0c5f1edd871c75cb29b4122"
+      "https://schema.org/sha256": "fd57520d22160ee792c7e94f92958dfa51d7fb8cc0c5f1edd871c75cb29b4122"
     },
     {
       "@type": "cr:FileObject",
@@ -93,7 +89,7 @@
       "description": "CSV file containing Turkish sentences and corresponding questions for experiment 3.",
       "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/expirement3_200sentence_data.csv",
       "encodingFormat": "text/csv",
-      "sha256": "8496a5c2224d4dbe4fd371e648044c48dbc6d6971403ced8e914ee1bc3e18f91"
+      "https://schema.org/sha256": "8496a5c2224d4dbe4fd371e648044c48dbc6d6971403ced8e914ee1bc3e18f91"
     },
     {
       "@type": "cr:FileObject",
@@ -102,7 +98,7 @@
       "description": "CSV file containing Turkish sentences and corresponding questions for experiment 3.",
       "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/expirement3_40sentence_data.csv",
       "encodingFormat": "text/csv",
-      "sha256": "42dede72f80b09821f4d5afba1e52551e5bc0d16a74aa610783f88d23755ba2b"
+      "https://schema.org/sha256": "42dede72f80b09821f4d5afba1e52551e5bc0d16a74aa610783f88d23755ba2b"
     }
   ],
   "recordSet": [
