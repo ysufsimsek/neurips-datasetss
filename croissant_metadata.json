@@ -44,7 +44,7 @@
     "transform": "cr:transform",
     "wd": "https://www.wikidata.org/wiki/"
   },
-  "@type": "sc:Dataset",
+  "@type": "Dataset",
   "name": "neurips-datasetss",
   "conformsTo": "http://mlcommons.org/croissant/1.0",
   "description": "Datasets used in a NeurIPS conference submission.",
@@ -55,11 +55,11 @@
   "citeAs": "Karakaş, S., & Şimşek, Y. (2026). neurips-datasetss: Datasets used in a NeurIPS conference submission.",
   "creator": [
     {
-      "@type": "sc:Person",
+      "@type": "Person",
       "name": "Sercan Karakaş"
     },
     {
-      "@type": "sc:Person",
+      "@type": "Person",
       "name": "Yusuf Şimşek"
     }
   ],
