@@ -1,32 +1,17 @@
 {
   "@context": {
     "@language": "en",
-    "@vocab": "https://schema.org/",
-    "cr": "http://mlcommons.org/croissant/",
-    "rai": "http://mlcommons.org/croissant/RAI/",
-    "sc": "https://schema.org/",
-    "dct": "http://purl.org/dc/terms/",
-    "conformsTo": "dct:conformsTo",
-    "recordSet": "cr:recordSet",
-    "field": "cr:field",
-    "dataType": {
-      "@id": "cr:dataType",
-      "@type": "@vocab"
-    },
-    "source": "cr:source",
-    "fileObject": "cr:fileObject",
-    "extract": "cr:extract",
-    "column": "cr:column"
+    "@vocab": "https://schema.org/"
   },
   "@type": "sc:Dataset",
   "name": "neurips-datasetss",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
   "description": "Datasets used in a NeurIPS conference submission.",
   "url": "https://github.com/ysufsimsek/neurips-datasetss",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "version": "1.0.0",
   "datePublished": "2026-05-06",
-  "citation": "Karakaş, S., & Şimşek, Y. (2026). neurips-datasetss: Datasets used in a NeurIPS conference submission.",
-  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Karakaş, S., & Şimşek, Y. (2026). neurips-datasetss: Datasets used in a NeurIPS conference submission.",
   "creator": [
     {
       "@type": "sc:Person",
@@ -39,28 +24,28 @@
   ],
   "distribution": [
     {
-      "@type": "sc:FileObject",
+      "@type": "cr:FileObject",
       "@id": "expirement1_and_2_200sentence_data_csv",
       "name": "expirement1_and_2_200sentence_data.csv",
       "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/expirement1_and_2_200sentence_data.csv",
       "encodingFormat": "text/csv"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "cr:FileObject",
       "@id": "expirement1_and_2_40sentence_data_csv",
       "name": "expirement1_and_2_40sentence_data.csv",
       "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/expirement1_and_2_40sentence_data.csv",
       "encodingFormat": "text/csv"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "cr:FileObject",
       "@id": "expirement3_200sentence_data_csv",
       "name": "expirement3_200sentence_data.csv",
       "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/expirement3_200sentence_data.csv",
       "encodingFormat": "text/csv"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "cr:FileObject",
       "@id": "expirement3_40sentence_data_csv",
       "name": "expirement3_40sentence_data.csv",
       "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/expirement3_40sentence_data.csv",
@@ -70,12 +55,15 @@
   "recordSet": [
     {
       "@type": "cr:RecordSet",
+      "@id": "expirement1_and_2_200sentence_data",
       "name": "expirement1_and_2_200sentence_data",
       "description": "CSV file containing sentence-level experimental data.",
       "field": [
         {
           "@type": "cr:Field",
+          "@id": "expirement1_and_2_200sentence_data/PairID",
           "name": "PairID",
+          "description": "Pair identifier.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -88,7 +76,9 @@
         },
         {
           "@type": "cr:Field",
+          "@id": "expirement1_and_2_200sentence_data/Condition",
           "name": "Condition",
+          "description": "Experimental condition.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -101,7 +91,9 @@
         },
         {
           "@type": "cr:Field",
+          "@id": "expirement1_and_2_200sentence_data/Sentence",
           "name": "Sentence",
+          "description": "Sentence text.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -114,7 +106,9 @@
         },
         {
           "@type": "cr:Field",
+          "@id": "expirement1_and_2_200sentence_data/DI",
           "name": "DI",
+          "description": "DI field from the experimental dataset.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -127,7 +121,9 @@
         },
         {
           "@type": "cr:Field",
+          "@id": "expirement1_and_2_200sentence_data/MIS",
           "name": "MIS",
+          "description": "MIS field from the experimental dataset.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -140,7 +136,9 @@
         },
         {
           "@type": "cr:Field",
+          "@id": "expirement1_and_2_200sentence_data/Full_DI",
           "name": "Full_DI",
+          "description": "Full DI text field.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -153,7 +151,9 @@
         },
         {
           "@type": "cr:Field",
+          "@id": "expirement1_and_2_200sentence_data/Full_MIS",
           "name": "Full_MIS",
+          "description": "Full MIS text field.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -168,12 +168,15 @@
     },
     {
       "@type": "cr:RecordSet",
+      "@id": "expirement1_and_2_40sentence_data",
       "name": "expirement1_and_2_40sentence_data",
       "description": "CSV file containing sentence-level experimental data.",
       "field": [
         {
           "@type": "cr:Field",
+          "@id": "expirement1_and_2_40sentence_data/Sentence",
           "name": "Sentence",
+          "description": "Sentence text.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -186,7 +189,9 @@
         },
         {
           "@type": "cr:Field",
+          "@id": "expirement1_and_2_40sentence_data/Condition",
           "name": "Condition",
+          "description": "Experimental condition.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -201,12 +206,15 @@
     },
     {
       "@type": "cr:RecordSet",
+      "@id": "expirement3_200sentence_data",
       "name": "expirement3_200sentence_data",
       "description": "CSV file containing Turkish sentences and their corresponding questions.",
       "field": [
         {
           "@type": "cr:Field",
+          "@id": "expirement3_200sentence_data/high_low",
           "name": "high_low",
+          "description": "High-low condition label.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -219,7 +227,9 @@
         },
         {
           "@type": "cr:Field",
+          "@id": "expirement3_200sentence_data/cumle",
           "name": "cumle",
+          "description": "Turkish sentence text.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -232,7 +242,9 @@
         },
         {
           "@type": "cr:Field",
+          "@id": "expirement3_200sentence_data/cumlenin_sorusu",
           "name": "cumlenin_sorusu",
+          "description": "Question corresponding to the Turkish sentence.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -247,12 +259,15 @@
     },
     {
       "@type": "cr:RecordSet",
+      "@id": "expirement3_40sentence_data",
       "name": "expirement3_40sentence_data",
       "description": "CSV file containing Turkish sentences and their corresponding questions.",
       "field": [
         {
           "@type": "cr:Field",
+          "@id": "expirement3_40sentence_data/high_low",
           "name": "high_low",
+          "description": "High-low condition label.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -265,7 +280,9 @@
         },
         {
           "@type": "cr:Field",
+          "@id": "expirement3_40sentence_data/cumle",
           "name": "cumle",
+          "description": "Turkish sentence text.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -278,7 +295,9 @@
         },
         {
           "@type": "cr:Field",
+          "@id": "expirement3_40sentence_data/cumlenin_sorusu",
           "name": "cumlenin_sorusu",
+          "description": "Question corresponding to the Turkish sentence.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -292,11 +311,11 @@
       ]
     }
   ],
-  "rai:dataCollection": "The dataset consists of sentence-level materials used in a NeurIPS conference submission.",
-  "rai:dataCollectionType": "Experimental sentence dataset.",
-  "rai:personalSensitiveInformation": "No known personal or sensitive information is included.",
-  "rai:annotatorDemographics": "Not applicable.",
-  "rai:preprocessing": "CSV files are provided as used for the conference submission.",
-  "rai:uses": "This dataset is intended for academic research and review related to the associated NeurIPS conference submission.",
-  "rai:limitations": "The dataset is provided for research use and should be interpreted in the context of the associated paper."
+  "http://mlcommons.org/croissant/RAI/dataCollection": "The dataset consists of sentence-level materials used in a NeurIPS conference submission.",
+  "http://mlcommons.org/croissant/RAI/dataCollectionType": "Experimental sentence dataset.",
+  "http://mlcommons.org/croissant/RAI/personalSensitiveInformation": "No known personal or sensitive information is included.",
+  "http://mlcommons.org/croissant/RAI/annotatorDemographics": "Not applicable.",
+  "http://mlcommons.org/croissant/RAI/preprocessing": "CSV files are provided as used for the conference submission.",
+  "http://mlcommons.org/croissant/RAI/uses": "This dataset is intended for academic research and review related to the associated NeurIPS conference submission.",
+  "http://mlcommons.org/croissant/RAI/limitations": "The dataset is provided for research use and should be interpreted in the context of the associated paper."
 }
