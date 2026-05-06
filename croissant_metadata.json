@@ -1,0 +1,286 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "sc": "https://schema.org/"
+  },
+  "@type": "sc:Dataset",
+  "name": "neurips-datasetss",
+  "description": "Datasets used in a NeurIPS conference submission.",
+  "url": "https://github.com/ysufsimsek/neurips-datasetss",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": [
+    {
+      "@type": "sc:Person",
+      "name": "Sercan Karakaş"
+    },
+    {
+      "@type": "sc:Person",
+      "name": "Yusuf Şimşek"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "experiment1_and_2_200sentence_data_csv",
+      "name": "experiment1_and_2_200sentence_data.csv",
+      "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/experiment1_and_2_200sentence_data.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "experiment1_and_2_40sentence_data_csv",
+      "name": "experiment1_and_2_40sentence_data.csv",
+      "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/experiment1_and_2_40sentence_data.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "experiment3_200sentence_data_csv",
+      "name": "experiment3_200sentence_data.csv",
+      "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/experiment3_200sentence_data.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "experiment3_40sentence_data_csv",
+      "name": "experiment3_40sentence_data.csv",
+      "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/experiment3_40sentence_data.csv",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "name": "experiment1_and_2_200sentence_data",
+      "description": "CSV file containing sentence-level experimental data.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "name": "PairID",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment1_and_2_200sentence_data_csv"
+            },
+            "extract": {
+              "column": "PairID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "Condition",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment1_and_2_200sentence_data_csv"
+            },
+            "extract": {
+              "column": "Condition"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "Sentence",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment1_and_2_200sentence_data_csv"
+            },
+            "extract": {
+              "column": "Sentence"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "DI",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment1_and_2_200sentence_data_csv"
+            },
+            "extract": {
+              "column": "DI"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "MIS",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment1_and_2_200sentence_data_csv"
+            },
+            "extract": {
+              "column": "MIS"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "Full_DI",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment1_and_2_200sentence_data_csv"
+            },
+            "extract": {
+              "column": "Full_DI"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "Full_MIS",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment1_and_2_200sentence_data_csv"
+            },
+            "extract": {
+              "column": "Full_MIS"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "name": "experiment1_and_2_40sentence_data",
+      "description": "CSV file containing sentence-level experimental data.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "name": "Sentence",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment1_and_2_40sentence_data_csv"
+            },
+            "extract": {
+              "column": "Sentence"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "Condition",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment1_and_2_40sentence_data_csv"
+            },
+            "extract": {
+              "column": "Condition"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "name": "experiment3_200sentence_data",
+      "description": "CSV file containing Turkish sentences and their corresponding questions.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "name": "high_low",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment3_200sentence_data_csv"
+            },
+            "extract": {
+              "column": "high_low"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "cumle",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment3_200sentence_data_csv"
+            },
+            "extract": {
+              "column": "cumle"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "cumlenin_sorusu",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment3_200sentence_data_csv"
+            },
+            "extract": {
+              "column": "cumlenin_sorusu"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "name": "experiment3_40sentence_data",
+      "description": "CSV file containing Turkish sentences and their corresponding questions.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "name": "high_low",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment3_40sentence_data_csv"
+            },
+            "extract": {
+              "column": "high_low"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "cumle",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment3_40sentence_data_csv"
+            },
+            "extract": {
+              "column": "cumle"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "cumlenin_sorusu",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "experiment3_40sentence_data_csv"
+            },
+            "extract": {
+              "column": "cumlenin_sorusu"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "rai:dataCollection": "The dataset consists of sentence-level materials used in a NeurIPS conference submission.",
+  "rai:dataCollectionType": "Experimental sentence dataset.",
+  "rai:personalSensitiveInformation": "No known personal or sensitive information is included.",
+  "rai:annotatorDemographics": "Not applicable.",
+  "rai:preprocessing": "CSV files are provided as used for the conference submission.",
+  "rai:uses": "This dataset is intended for academic research and review related to the associated NeurIPS conference submission.",
+  "rai:limitations": "The dataset is provided for research use and should be interpreted in the context of the associated paper."
+}
