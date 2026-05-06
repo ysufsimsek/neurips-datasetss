@@ -4,13 +4,29 @@
     "@vocab": "https://schema.org/",
     "cr": "http://mlcommons.org/croissant/",
     "rai": "http://mlcommons.org/croissant/RAI/",
-    "sc": "https://schema.org/"
+    "sc": "https://schema.org/",
+    "dct": "http://purl.org/dc/terms/",
+    "conformsTo": "dct:conformsTo",
+    "recordSet": "cr:recordSet",
+    "field": "cr:field",
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "source": "cr:source",
+    "fileObject": "cr:fileObject",
+    "extract": "cr:extract",
+    "column": "cr:column"
   },
   "@type": "sc:Dataset",
   "name": "neurips-datasetss",
   "description": "Datasets used in a NeurIPS conference submission.",
   "url": "https://github.com/ysufsimsek/neurips-datasetss",
   "license": "https://creativecommons.org/licenses/by/4.0/",
+  "version": "1.0.0",
+  "datePublished": "2026-05-06",
+  "citation": "Karakaş, S., & Şimşek, Y. (2026). neurips-datasetss: Datasets used in a NeurIPS conference submission.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
   "creator": [
     {
       "@type": "sc:Person",
@@ -23,38 +39,38 @@
   ],
   "distribution": [
     {
-      "@type": "cr:FileObject",
-      "@id": "experiment1_and_2_200sentence_data_csv",
-      "name": "experiment1_and_2_200sentence_data.csv",
-      "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/experiment1_and_2_200sentence_data.csv",
+      "@type": "sc:FileObject",
+      "@id": "expirement1_and_2_200sentence_data_csv",
+      "name": "expirement1_and_2_200sentence_data.csv",
+      "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/expirement1_and_2_200sentence_data.csv",
       "encodingFormat": "text/csv"
     },
     {
-      "@type": "cr:FileObject",
-      "@id": "experiment1_and_2_40sentence_data_csv",
-      "name": "experiment1_and_2_40sentence_data.csv",
-      "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/experiment1_and_2_40sentence_data.csv",
+      "@type": "sc:FileObject",
+      "@id": "expirement1_and_2_40sentence_data_csv",
+      "name": "expirement1_and_2_40sentence_data.csv",
+      "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/expirement1_and_2_40sentence_data.csv",
       "encodingFormat": "text/csv"
     },
     {
-      "@type": "cr:FileObject",
-      "@id": "experiment3_200sentence_data_csv",
-      "name": "experiment3_200sentence_data.csv",
-      "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/experiment3_200sentence_data.csv",
+      "@type": "sc:FileObject",
+      "@id": "expirement3_200sentence_data_csv",
+      "name": "expirement3_200sentence_data.csv",
+      "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/expirement3_200sentence_data.csv",
       "encodingFormat": "text/csv"
     },
     {
-      "@type": "cr:FileObject",
-      "@id": "experiment3_40sentence_data_csv",
-      "name": "experiment3_40sentence_data.csv",
-      "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/experiment3_40sentence_data.csv",
+      "@type": "sc:FileObject",
+      "@id": "expirement3_40sentence_data_csv",
+      "name": "expirement3_40sentence_data.csv",
+      "contentUrl": "https://raw.githubusercontent.com/ysufsimsek/neurips-datasetss/main/expirement3_40sentence_data.csv",
       "encodingFormat": "text/csv"
     }
   ],
   "recordSet": [
     {
       "@type": "cr:RecordSet",
-      "name": "experiment1_and_2_200sentence_data",
+      "name": "expirement1_and_2_200sentence_data",
       "description": "CSV file containing sentence-level experimental data.",
       "field": [
         {
@@ -63,7 +79,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment1_and_2_200sentence_data_csv"
+              "@id": "expirement1_and_2_200sentence_data_csv"
             },
             "extract": {
               "column": "PairID"
@@ -76,7 +92,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment1_and_2_200sentence_data_csv"
+              "@id": "expirement1_and_2_200sentence_data_csv"
             },
             "extract": {
               "column": "Condition"
@@ -89,7 +105,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment1_and_2_200sentence_data_csv"
+              "@id": "expirement1_and_2_200sentence_data_csv"
             },
             "extract": {
               "column": "Sentence"
@@ -102,7 +118,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment1_and_2_200sentence_data_csv"
+              "@id": "expirement1_and_2_200sentence_data_csv"
             },
             "extract": {
               "column": "DI"
@@ -115,7 +131,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment1_and_2_200sentence_data_csv"
+              "@id": "expirement1_and_2_200sentence_data_csv"
             },
             "extract": {
               "column": "MIS"
@@ -128,7 +144,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment1_and_2_200sentence_data_csv"
+              "@id": "expirement1_and_2_200sentence_data_csv"
             },
             "extract": {
               "column": "Full_DI"
@@ -141,7 +157,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment1_and_2_200sentence_data_csv"
+              "@id": "expirement1_and_2_200sentence_data_csv"
             },
             "extract": {
               "column": "Full_MIS"
@@ -152,7 +168,7 @@
     },
     {
       "@type": "cr:RecordSet",
-      "name": "experiment1_and_2_40sentence_data",
+      "name": "expirement1_and_2_40sentence_data",
       "description": "CSV file containing sentence-level experimental data.",
       "field": [
         {
@@ -161,7 +177,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment1_and_2_40sentence_data_csv"
+              "@id": "expirement1_and_2_40sentence_data_csv"
             },
             "extract": {
               "column": "Sentence"
@@ -174,7 +190,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment1_and_2_40sentence_data_csv"
+              "@id": "expirement1_and_2_40sentence_data_csv"
             },
             "extract": {
               "column": "Condition"
@@ -185,7 +201,7 @@
     },
     {
       "@type": "cr:RecordSet",
-      "name": "experiment3_200sentence_data",
+      "name": "expirement3_200sentence_data",
       "description": "CSV file containing Turkish sentences and their corresponding questions.",
       "field": [
         {
@@ -194,7 +210,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment3_200sentence_data_csv"
+              "@id": "expirement3_200sentence_data_csv"
             },
             "extract": {
               "column": "high_low"
@@ -207,7 +223,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment3_200sentence_data_csv"
+              "@id": "expirement3_200sentence_data_csv"
             },
             "extract": {
               "column": "cumle"
@@ -220,7 +236,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment3_200sentence_data_csv"
+              "@id": "expirement3_200sentence_data_csv"
             },
             "extract": {
               "column": "cumlenin_sorusu"
@@ -231,7 +247,7 @@
     },
     {
       "@type": "cr:RecordSet",
-      "name": "experiment3_40sentence_data",
+      "name": "expirement3_40sentence_data",
       "description": "CSV file containing Turkish sentences and their corresponding questions.",
       "field": [
         {
@@ -240,7 +256,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment3_40sentence_data_csv"
+              "@id": "expirement3_40sentence_data_csv"
             },
             "extract": {
               "column": "high_low"
@@ -253,7 +269,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment3_40sentence_data_csv"
+              "@id": "expirement3_40sentence_data_csv"
             },
             "extract": {
               "column": "cumle"
@@ -266,7 +282,7 @@
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "experiment3_40sentence_data_csv"
+              "@id": "expirement3_40sentence_data_csv"
             },
             "extract": {
               "column": "cumlenin_sorusu"
