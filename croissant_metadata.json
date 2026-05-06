@@ -39,11 +39,14 @@
     "replace": "cr:replace",
     "sc": "https://schema.org/",
     "separator": "cr:separator",
-    "sha256": "cr:sha256",
+    "sha256": "sc:sha256",
     "source": "cr:source",
     "subField": "cr:subField",
     "transform": "cr:transform",
-    "wd": "https://www.wikidata.org/wiki/"
+    "wd": "https://www.wikidata.org/wiki/",
+    "equivalentProperty": "cr:equivalentProperty",
+    "fileProperty": "cr:fileProperty",
+    "samplingRate": "cr:samplingRate"
   },
   "@type": "Dataset",
   "name": "neurips-datasetss",
